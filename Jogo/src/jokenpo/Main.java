@@ -8,6 +8,7 @@ public class Main {
 		Oponente jogador2 = new Oponente();
 		jogador1.insereNome();
 		jogador1.escolhaPapel();
+		jogador2.nomeOponente();
 		jogador2.escolhaOponente();
 		
 	}

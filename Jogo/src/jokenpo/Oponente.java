@@ -4,8 +4,32 @@ import java.util.Random;
 
 public class Oponente {
 	
+	private int nome;
+	private String nomeConvertido;
 	private int sistema;
-	private String conversao;	
+	private String sistemaConvertido;	
+	
+	public void nomeOponente() {
+	Random nome = new Random();
+	for (int i = 0; i < 3; i++) {
+		this.setNome(nome.nextInt(4));
+	}
+		switch (getNome()) {
+		case 0: 
+			setNomeConvertido("Evandro");
+			break;
+		case 1:
+			setNomeConvertido("Jenni");
+			break;
+		case 2:
+			setNomeConvertido("Roberta");
+			break;
+		case 3:
+			setNomeConvertido("Thiago");
+			break;		
+		}
+		System.out.println("Nome do seu oponente: "+ getNomeConvertido());
+	}
 
 	public void escolhaOponente() {
 	Random cpu = new Random();	
@@ -13,13 +37,13 @@ public class Oponente {
 		this.setSistema(cpu.nextInt(3));		
 	}
 	if (getSistema() == 0) {
-		setConversao("Pedra");
+		setSistemaConvertido("Pedra");
 	}else if (getSistema() == 1) {
-		setConversao("Papel");
+		setSistemaConvertido("Papel");
 	}else {
-		setConversao("Tesoura");
+		setSistemaConvertido("Tesoura");
 	}
-	System.out.print("Seu oponente escolheu: " + getConversao());
+	System.out.print("Seu oponente escolheu: " + getSistemaConvertido());
 }
 	
 	public int getSistema() {
@@ -30,11 +54,31 @@ public class Oponente {
 		this.sistema = sistema;
 	}
 	
-	public String getConversao() {
-		return this.conversao;
+	public String getSistemaConvertido() {
+		return this.sistemaConvertido;
 	}
 
-	public void setConversao(String conversao) {
-		this.conversao = conversao;
+	public void setSistemaConvertido(String conversao) {
+		this.sistemaConvertido = conversao;
 	}
+
+	public int getNome() {
+		return this.nome;
+	}
+
+	public void setNome(int nome) {
+		this.nome = nome;
+	}
+
+	public String getNomeConvertido() {
+		return this.nomeConvertido;
+	}
+
+	public void setNomeConvertido(String nomeConvertido) {
+		this.nomeConvertido = nomeConvertido;
+	}
+	
+	
+	
+	
 }
