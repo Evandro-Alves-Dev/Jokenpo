@@ -6,11 +6,12 @@ public class Main {
 		
 		Usuario jogador1 = new Usuario();
 		Oponente jogador2 = new Oponente();
+		Resultado jogada = new Resultado();
 		jogador1.insereNome();
-		jogador1.escolhaPapel();
+		jogador1.escolhaTesoura();
 		jogador2.nomeOponente();
 		jogador2.escolhaOponente();
-		
+		jogada.Resultado();
 	}
 
 }

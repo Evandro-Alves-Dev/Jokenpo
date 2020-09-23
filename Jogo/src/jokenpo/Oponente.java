@@ -43,7 +43,7 @@ public class Oponente {
 	}else {
 		setSistemaConvertido("Tesoura");
 	}
-	System.out.print("Seu oponente escolheu: " + getSistemaConvertido());
+	System.out.println("Seu oponente escolheu: " + getSistemaConvertido());
 }
 	
 	public int getSistema() {
