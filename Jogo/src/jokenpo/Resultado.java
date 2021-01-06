@@ -19,7 +19,9 @@ public class Resultado {
 			System.out.println("PARABENS, VOCE GANHOU!!!");
 		}else {
 			System.out.println("Empate.");			
-		}		
+		}	
+		
+		System.out.println("FIM DE JOGO...");
 	}
 }	
 
